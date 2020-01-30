@@ -207,8 +207,17 @@ $(function() {
     var imgNode = result.find('img, canvas')
     var img = imgNode[0]
     var pixelRatio = window.devicePixelRatio || 1
+    
+    imgNode.scale(
+  img, // img or canvas element
+  { maxWidth: 100 }
+);
+   /*
     imgNode
+    
+    
       // eslint-disable-next-line new-cap
+   
       .Jcrop(
         {
           setSelect: [
@@ -228,6 +237,7 @@ $(function() {
           jcropAPI = this
         }
       )
+      */
       .parent()
       .on('click', function(event) {
         event.preventDefault()
