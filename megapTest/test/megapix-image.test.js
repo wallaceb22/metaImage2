@@ -8,7 +8,7 @@ window.onload = function() {
     // Render resized image into image element using quality option.
     // Quality option is valid when rendering into image element.
     var resImg = document.getElementById('resultImage');
-    mpImg.render(resImg, { maxWidth: 300, maxHeight: 300, quality: 0.5 });
+    mpImg.render(resImg, { maxWidth: 1000, maxHeight: 1000, quality: 0.5 });
 
     // Render resized image into canvas element.
     var resCanvas1 = document.getElementById('resultCanvas1');
